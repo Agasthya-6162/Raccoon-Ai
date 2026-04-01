@@ -1,0 +1,229 @@
+/*--------------------------------------------------------------------------------------
+ *  Copyright 2025 Glass Devtools, Inc. All rights reserved.
+ *  Licensed under the Apache License, Version 2.0. See LICENSE.txt for more information.
+ *--------------------------------------------------------------------------------------*/
+
+.monaco-editor .raccoon-sweepIdxBG {
+	background-color: var(--vscode-raccoon-sweepIdxBG);
+}
+
+.raccoon-sweepBG {
+	background-color: var(--vscode-raccoon-sweepBG);
+}
+
+.raccoon-highlightBG {
+	background-color: var(--vscode-raccoon-highlightBG);
+}
+
+.raccoon-greenBG {
+	background-color: var(--vscode-raccoon-greenBG);
+}
+
+.raccoon-redBG {
+	background-color: var(--vscode-raccoon-redBG);
+}
+
+
+/* Renamed from raccoon-watermark-button to raccoon-openfolder-button */
+.raccoon-openfolder-button {
+    padding: 8px 20px;
+    background-color: #306dce;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    outline: none !important;
+	box-shadow: none !important;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+.raccoon-openfolder-button:hover {
+    background-color: #2563eb;
+}
+.raccoon-openfolder-button:active {
+    background-color: #2563eb;
+}
+
+/* Added for Open SSH button with slightly darker color */
+.raccoon-openssh-button {
+    padding: 8px 20px;
+    background-color: #656565; /* Slightly darker than the #5a5a5a in the TS file */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    outline: none !important;
+	box-shadow: none !important;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.raccoon-openssh-button:hover {
+    background-color: #474747; /* Darker on hover */
+}
+.raccoon-openssh-button:active {
+    background-color: #474747;
+}
+
+
+.raccoon-settings-watermark-button {
+	margin: 8px 0;
+	padding: 8px 20px;
+	background-color: var(--vscode-input-background);
+	color: var(--vscode-input-foreground);
+	border: none;
+	border-radius: 4px;
+	outline: none !important;
+	box-shadow: none !important;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.raccoon-settings-watermark-button:hover {
+	filter: brightness(1.1);
+}
+
+.raccoon-settings-watermark-button:active {
+	filter: brightness(1.1);
+}
+
+.raccoon-link {
+	color: #3b82f6;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.raccoon-link:hover {
+	opacity: 80%;
+}
+
+/* styles for all containers used by raccoon */
+.raccoon-scope {
+	--scrollbar-vertical-width: 8px;
+	--scrollbar-horizontal-height: 6px;
+}
+
+/* Target both raccoon-scope and all its descendants with scrollbars */
+.raccoon-scope,
+.raccoon-scope * {
+	scrollbar-width: thin !important;
+	scrollbar-color: var(--raccoon-bg-1) var(--raccoon-bg-3) !important;
+	/* For Firefox */
+}
+
+.raccoon-scope::-webkit-scrollbar,
+.raccoon-scope *::-webkit-scrollbar {
+	width: var(--scrollbar-vertical-width) !important;
+	height: var(--scrollbar-horizontal-height) !important;
+	background-color: var(--raccoon-bg-3) !important;
+}
+
+.raccoon-scope::-webkit-scrollbar-thumb,
+.raccoon-scope *::-webkit-scrollbar-thumb {
+	background-color: var(--raccoon-bg-1) !important;
+	border-radius: 4px !important;
+	border: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.raccoon-scope::-webkit-scrollbar-thumb:hover,
+.raccoon-scope *::-webkit-scrollbar-thumb:hover {
+	background-color: var(--raccoon-bg-1) !important;
+	filter: brightness(1.1) !important;
+}
+
+.raccoon-scope::-webkit-scrollbar-thumb:active,
+.raccoon-scope *::-webkit-scrollbar-thumb:active {
+	background-color: var(--raccoon-bg-1) !important;
+	filter: brightness(1.2) !important;
+}
+
+.raccoon-scope::-webkit-scrollbar-track,
+.raccoon-scope *::-webkit-scrollbar-track {
+	background-color: var(--raccoon-bg-3) !important;
+	border: none !important;
+}
+
+.raccoon-scope::-webkit-scrollbar-corner,
+.raccoon-scope *::-webkit-scrollbar-corner {
+	background-color: var(--raccoon-bg-3) !important;
+}
+
+/* Add raccoon-scrollable-element styles to match */
+.raccoon-scrollable-element {
+	background-color: var(--vscode-editor-background);
+	--scrollbar-vertical-width: 14px;
+	--scrollbar-horizontal-height: 6px;
+	overflow: auto;
+	/* Ensure scrollbars are shown when needed */
+}
+
+.raccoon-scrollable-element,
+.raccoon-scrollable-element * {
+	scrollbar-width: thin !important;
+	/* For Firefox */
+	scrollbar-color: var(--raccoon-bg-1) var(--raccoon-bg-3) !important;
+	/* For Firefox */
+}
+
+.raccoon-scrollable-element::-webkit-scrollbar,
+.raccoon-scrollable-element *::-webkit-scrollbar {
+	width: var(--scrollbar-vertical-width) !important;
+	height: var(--scrollbar-horizontal-height) !important;
+	background-color: var(--raccoon-bg-3) !important;
+}
+
+.raccoon-scrollable-element::-webkit-scrollbar-thumb,
+.raccoon-scrollable-element *::-webkit-scrollbar-thumb {
+	background-color: var(--raccoon-bg-1) !important;
+	border-radius: 4px !important;
+	border: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.raccoon-scrollable-element::-webkit-scrollbar-thumb:hover,
+.raccoon-scrollable-element *::-webkit-scrollbar-thumb:hover {
+	background-color: var(--raccoon-bg-1) !important;
+	filter: brightness(1.1) !important;
+}
+
+.raccoon-scrollable-element::-webkit-scrollbar-thumb:active,
+.raccoon-scrollable-element *::-webkit-scrollbar-thumb:active {
+	background-color: var(--raccoon-bg-1) !important;
+	filter: brightness(1.2) !important;
+}
+
+.raccoon-scrollable-element::-webkit-scrollbar-track,
+.raccoon-scrollable-element *::-webkit-scrollbar-track {
+	background-color: var(--raccoon-bg-3) !important;
+	border: none !important;
+}
+
+.raccoon-scrollable-element::-webkit-scrollbar-corner,
+.raccoon-scrollable-element *::-webkit-scrollbar-corner {
+	background-color: var(--raccoon-bg-3) !important;
+}
+
+.raccoon-onboarding-logo {
+	width: 100%;
+	height: 100%;
+	background-image: url('../../../../browser/media/raccoon-icon-sm.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.raccoon-chat-watermark {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 180px;
+	height: 180px;
+	background-image: url('../../../../browser/media/raccoon-icon-sm.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.05;
+	pointer-events: none;
+	z-index: 0;
+}
